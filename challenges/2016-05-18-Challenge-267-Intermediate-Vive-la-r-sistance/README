@@ -1,0 +1,58 @@
+Description
+
+It's midnight. You're tired after a night of partying (or gaming, or whatever else you like to do when procrastinating), and are about ready to go to sleep when you remember: you have a whole load of homework for your Electronics 101 course. The topic is resistance, and calculating the total resistance of various circuits.
+
+Someone who is not you might do something sensible, like sighing and getting the work done, or even going to sleep and letting it go. But you are a programmer! Obviously, the only thing to do here is to write a program to do your homework for you!
+
+Today's challenge is to write a program that calculates the resistance between two points in a circuit. For the necessary background maths, check the bottom of the problem.
+Formal Input
+
+The input consists of two parts. First, a line that lists a series of IDs for circuit "nodes". These are strings of uppercase characters. The first and last node are to be the start and end point of the circuit.
+
+Next, there will be some number of lines that identify two nodes and specify the resistance between them (in Ohms, for simplicity). This will be a positive number.
+
+Sample input:
+
+A B C
+A B 10
+A B 30
+B C 50
+
+The above input can be interpreted as the circuit:
+
+     +--(10)--+
+     |        |
+[A]--+        +--[B]--(50)--[C]
+     |        |
+     +--(30)--+
+
+    Note: resistance is bi-directional. A B 10 means the same thing as B A 10.
+
+Formal Output
+
+The output consists of a single number: the resistance between the first and last node, in Ohms. Round to the 3rd decimal place, if necessary.
+
+Sample output:
+
+57.5
+
+Explanation: The theory is explained in the last section of this problem, but the calculation to achieve 57.5 is:
+
+1 / (1/10 + 1/30) + 50
+
+Challenge 1
+
+Input:
+
+A B C D E F
+A C 5
+A B 10
+D A 5
+D E 10
+C E 10
+E F 15
+B F 20
+
+Output:
+
+12.857
