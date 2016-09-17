@@ -1,4 +1,4 @@
-#Description
+##Description
 
 An anagram is a form of word play, where you take a word (or set of words) and form a different word (or different set of words) that use the same letters, just rearranged. All words must be valid spelling, and shuffling words around doesn't count.
 
@@ -8,7 +8,7 @@ Someone once said, "All the life's wisdom can be found in anagrams. Anagrams nev
 
 Punctuation, spaces, and capitalization don't matter, just treat the letters as you would scrabble tiles.
 
-#Input Description
+##Input Description
 
 You'll be given two words or sets of words separated by a question mark. Your task is to replace the question mark with information about the validity of the anagram. Example:
 
@@ -16,7 +16,7 @@ You'll be given two words or sets of words separated by a question mark. Your ta
 "parliament" ? "partial man"
 ```
 
-#Output Description
+##Output Description
 
 You should replace the question mark with some marker about the validity of the anagram proposed. Example:
 
