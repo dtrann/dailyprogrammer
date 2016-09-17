@@ -1,0 +1,19 @@
+Things I learned
+
+##methods
+split('n') split will split input on 'n' and return an array with [0] containing the first chunk
+map()creates a new array, by applying a function to each element of an existing array
+.exec(str) executes a search for a match in a specified string. Returns a result array, or null.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec
+
+##regex
+http://www.w3schools.com/jsref/jsref_obj_regexp.asp
+/.../ is a regular expression in js
+\s and \s+ is for spaces, \s+ for multiple spaces
+from stack overflow:
+	var str = '#this #is__ __#a test###__';
+	str.replace(/#|_/g,''); // result: "this is a test"
+	You could also use a character class:
+	str.replace(/[#_]/g,'');
+
+_ is a valid variable identifier in JavaScript, and could theoretically refer to anything. Using _(...) with function syntax implies that _ is a function.
