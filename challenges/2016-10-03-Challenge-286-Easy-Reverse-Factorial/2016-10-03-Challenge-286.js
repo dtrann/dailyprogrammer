@@ -1,14 +1,14 @@
 function findFactorial(input) {
-    var count = 2;
-    while(input > 1 && Math.ceil(input) === input) {
-        input = input / count;
-        count+= 1;
+    var count = 1; // set the counter to 1
+    while(input > 1 && Math.round(input) === input) {
+        count += 1; // increase counter by 1 each loop
+        input /= count; // divide by the counter
     }
     
-    if(input === 1) {
+    if(input === 1) { // when it is a factorial
         return count+'!';
     }
-    else {
+    else { // when it is not
         return 'NONE';
     }
 }
